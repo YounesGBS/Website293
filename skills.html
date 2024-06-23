@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <title>Fähigkeiten</title>
+</head>
+<body class="all">
+
+<div class="header">
+    <h1 class="logo">Younes Messirdi</h1>
+    <div class="burger-menu" id="burgerMenu">
+        ☰
+    </div>
+    <div class="header-right" id="headerRight">
+        <a href="Index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a class="active"  href="skills.html">Fähigkeiten</a>
+        <a href="Portofolio.html">Portfolio</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="strengths">
+        <div class="strengths-left">
+            <h2>Stärken:</h2>
+            <ol>
+                <li>Geduld</li>
+                <li>Flexibilität</li>
+                <li>Teamarbeit</li>
+                <li>Zuverlässigkeit</li>
+            </ol>
+        </div>
+        <div class="strengths-right">
+            <h2>Stärken:</h2>
+            <ol start="5">
+                <li>Ehrgeiz</li>
+                <li>Neugier</li>
+                <li>Hilfsbereitschaft</li>
+                <li>Kreativität</li>
+            </ol>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="skill">
+            <img class="skillimg" src="Bilder/java.png" alt="Java Logo">
+            <div class="progress-bar">
+                <div class="progress" style="width: 45%;"></div>
+                <span>45%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <img class="skillimg" src="Bilder/Html.png" alt="HTML Logo">
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+                <span>70%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <img class="skillimg" src="Bilder/Css.png" alt="CSS Logo">
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+                <span>60%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <img class="skillimg" src="Bilder/Reactnative.png" alt="React Logo">
+            <div class="progress-bar">
+                <div class="progress" style="width: 40%;"></div>
+                <span>40%</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('burgerMenu').addEventListener('click', function() {
+        var headerRight = document.getElementById('headerRight');
+        if (headerRight.style.display === 'block') {
+            headerRight.style.display = 'none';
+        } else {
+            headerRight.style.display = 'block';
+        }
+    }); 
+</script>
+
+</body>
+</html>

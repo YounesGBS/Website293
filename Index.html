@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body class="home">
+
+<div class="header">
+    <h1 class="logo">Younes Messirdi</h1>
+    <div class="burger-menu" id="burgerMenu">
+        ☰
+    </div>
+    <div class="header-right" id="headerRight">
+        <a class="active" href="Index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a href="skills.html">Fähigkeiten</a>
+        <a href="Portofolio.html">Portfolio</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+</div>
+
+<div class="content">
+    <p>Lehrling bei Valantic</p>
+    <div class="h1-container">
+        <h1>Personal Website</h1>
+        <h1 class="punkt">.</h1>
+    </div>
+    <p class="homebeschreibung">Hey, ich heiße Younes, bin 16 Jahre alt und mache die Lehre zum Informatiker. Das hier ist meine Personal Website.</p>
+</div>
+
+
+<script>
+    document.getElementById('burgerMenu').addEventListener('click', function() {
+        var headerRight = document.getElementById('headerRight');
+        if (headerRight.style.display === 'block') {
+            headerRight.style.display = 'none';
+        } else {
+            headerRight.style.display = 'block';
+        }
+    }); 
+</script>
+
+</body>
+</html>

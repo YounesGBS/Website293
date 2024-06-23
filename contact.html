@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+<body class="all">
+    <div class="header">
+        <h1 class="logo">Younes Messirdi</h1>
+        <div class="burger-menu" id="burgerMenu">
+            ☰
+        </div>
+        <div class="header-right" id="headerRight">
+            <a  href="Index.html">Home</a>
+            <a href="about.html">Über mich</a>
+            <a href="skills.html">Fähigkeiten</a>
+            <a href="Portofolio.html">Portfolio</a>
+            <a class="active" href="contact.html">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="kontakt-container">
+        <div class="kontakt-details">
+            <h2>Kontaktieren sie mich</h2>
+            <div class="detail">
+                <div class="icon">📍</div>
+                <div class="infos">Demutstrasse 115, 9012 St. Gallen</div>
+            </div>
+            <div class="detail">
+                <div class="icon">📞</div>
+                <div class="infos">+41 78 123 4567</div>
+            </div>
+            <div class="detail">
+                <div class="icon">✉️</div>
+                <div class="infos">Younes.Messirdi@edu.gbssg.ch</div>
+            </div>
+            <div class="social-icons">
+                <div class="icon"><a href=http://instagram.com>📷</a></div>
+                <div class="icon"><a href="http://x.com">🐦</a></div>
+            </div>
+        </div>
+        <div class="kontakt-form">
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" id="vorname" name="vorname" placeholder="Vorname">
+                    <input type="text" id="nachname" name="nachname" placeholder="Nachname">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Mit was kann ich ihnen helfen?"></textarea>
+                </div>
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>
+
+
+        <video width="400" controls>
+            <source src="Video/Video.mp4" type="video/mp4">
+          </video>
+    
+
+
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            var headerRight = document.getElementById('headerRight');
+            if (headerRight.style.display === 'block') {
+                headerRight.style.display = 'none';
+            } else {
+                headerRight.style.display = 'block';
+            }
+        }); 
+    </script>
+
+    
+</body>
+</html>
